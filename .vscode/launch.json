@@ -37,6 +37,28 @@
             "type": "coreclr",
             "request": "attach",
             "processId": "${command.pickProcess}"
+        },
+        {
+            "name": "Launch localhost with sourcemaps",
+            "type": "chrome",
+            "runtimeExecutable": "chromium-browser",
+            "request": "launch",
+            "port": 9222,
+            "url": "http://localhost:5000",
+            // "sourceMapPathOverrides": {
+            //   "webpack:///./wwwroot":   "${webRoot}/wwwroot*", // Example: "webpack:///./src/app.js" -> "/users/me/project/src/app.js"
+            //   "webpack:///*":     "*",            // Example: "webpack:///C:/project/app.ts" -> "C:/project/app.ts"
+            // },
+            "webRoot": "${workspaceRoot}/wwwroot/app/",
+            "sourceMaps": true
+        },
+        {
+            "name": "Launch index.html (without sourcemaps)",
+            "type": "chrome",
+            "runtimeExecutable": "chromium-browser",
+            "request": "launch",
+            "port": 9222,
+            "file": "${workspaceRoot}/wwwroot/index.html"
         }
     ]
 }

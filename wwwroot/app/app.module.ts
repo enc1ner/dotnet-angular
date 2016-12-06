@@ -5,6 +5,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { PersonService } from './person.service';
+import { BookReviewService } from './bookreview.service';
 
 @NgModule({
     imports: [
@@ -14,7 +15,9 @@ import { PersonService } from './person.service';
     declarations: [AppComponent],
     providers: [
         PersonService,
+        BookReviewService
     ],
     bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+}

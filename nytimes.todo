@@ -1,6 +1,7 @@
 nytimes news reader todo:
     API:
         ☐ Get data from the nytimes api
+        ✔ Get key (for books): 939ac168f83545328b7ae7dc86e433f9 @done (2016-12-05 23:41:02)
     CSS:
         ☐ Choose a css framework
         ☐ Make a bootstrap, is there some tool for this?
